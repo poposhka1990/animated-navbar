@@ -1,0 +1,81 @@
+body {
+    height: 97vh;
+    background: linear-gradient(45deg, #6b0b98, #ff00c8);
+    display: grid;
+    place-items: center;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 400;
+
+}
+
+nav {
+    position: relative;
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 50px;
+    box-shadow: 0 1px 10px #00000093;
+}
+
+nav a {
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    z-index: 1;
+    transition: .5s;
+}
+
+nav span {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 39px;
+    width: 84px;
+    background: linear-gradient(to left, #61045f, #aa076b);
+    border-radius: 25px;
+    transition: .5s;
+}
+
+nav a:nth-child(1) {
+    color: #00e1ff;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+nav a:nth-child(2):hover {
+    color: #fff;
+}
+
+nav a:nth-child(2):hover ~ span {
+    left: 103px;
+    width: 104px;
+}
+
+nav a:nth-child(3):hover {
+    color: #fff;
+}
+
+nav a:nth-child(3):hover ~ span {
+    left: 213px;
+    width: 102px;
+}
+
+nav a:nth-child(4):hover {
+    color: #fff;
+}
+
+nav a:nth-child(4):hover ~ span {
+    left: 321px;
+    width: 102px;
+}
+
+nav a:nth-child(5):hover {
+    color: #fff;
+}
+
+nav a:nth-child(5):hover ~ span {
+    left: 427px;
+    width: 102px;
+}
